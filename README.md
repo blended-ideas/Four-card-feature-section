@@ -1,5 +1,7 @@
 # Frontend Mentor - Four card feature section
 
+Part of Florin Pop's #7Days7Websites Challenge - Day 4.
+
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
