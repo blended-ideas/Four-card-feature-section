@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+
+:root {
+    /* Primary Colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral Colors */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-blue: hsl(229, 6%, 66%);
+}
+
+body {
+    padding: 60px 20px;
+}
+
+body {
+    font-size: 15px !important;
+    font-family: 'Poppins', sans-serif;
+    color: var(--very-dark-blue);
+    margin: 0;
+}
+
+
+/*Heading*/
+section.main {
+    text-align: center;
+}
+
+
+/* Desktop */
+@media (min-width: 576px) {
+    .main-heading {
+        font-size: 35px;
+    }
+
+    .subheading {
+        width: 500px;
+        margin: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .main-heading {
+        font-size: 25px;
+    }
+}
+
+.subheading {
+    text-align: center;
+}
+
+.main-heading .heading1 {
+    font-weight: 200;
+}
+
+
+.main-heading .heading2 {
+    font-weight: 600;
+}
+
+
+/*Heading End*/
+
+@media (min-width: 576px) {
+    .gridWrapper {
+        margin: 45px auto;
+        display: grid;
+        grid-gap: 25px;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .gridWrapper {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .gridWrapper .block {
+        margin: 10px 0;
+    }
+}
+
+
+.gridWrapper {
+    width: 70vw;
+}
+
+.gridWrapper .block {
+    border-top: 3px solid;
+}
+
+.gridWrapper .block1 {
+    border-top-color: #5bc0de;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.gridWrapper .block2 {
+    border-top-color: #d9534f;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.gridWrapper .block3 {
+    border-top-color: #f0ad4e;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+.gridWrapper .block4 {
+    border-top-color: #0275d8;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.card {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    box-shadow: 10px 10px 38px -25px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.card .card-heading {
+    font-weight: 600;
+}
+
+.card p {
+    /*font-weight: 600;*/
+    font-size: 13px !important;
+    color: var(--grayish-blue);
+}
+
+.card .img-wrapper {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
